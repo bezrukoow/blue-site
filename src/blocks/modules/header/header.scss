@@ -1,0 +1,17 @@
+.header-top {
+    background:url(../../../images/Bg1.jpg) $primary-1 center top no-repeat;
+    color: $base-light;
+    font-family: $f-thin;
+    p {
+        font-size: 20px;
+    }
+    a{
+        font-size: 22px;
+        text-decoration: none;
+        color: $base-light;
+
+    }
+    span{
+        font-family: $f-reg;
+    }
+}
