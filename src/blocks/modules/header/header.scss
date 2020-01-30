@@ -1,17 +1,207 @@
 .header-top {
-    background:url(../../../images/Bg1.jpg) $primary-1 center top no-repeat;
-    color: $base-light;
-    font-family: $f-thin;
+    background:url(../../../img/bg.png) $primary-1 center center no-repeat;
+    @include text (20px,$base-light,$f-reg);
+    .row {
+        align-items: center;
+    }
     p {
         font-size: 20px;
     }
-    a{
-        font-size: 22px;
+    a {
+        @include text (22px,$base-light,$f-reg);
+        text-transform: uppercase;
         text-decoration: none;
-        color: $base-light;
-
     }
     span{
-        font-family: $f-reg;
+        font-family: $f-thin;
+    }
+    .sprite {
+        background: url(../../../img/css_sprites.png);
+        display: inline-block;
+        margin-left: -3px;
+    }
+    .login {
+        width: 68px;
+        height: 17px;
+        background-position: -5px -7px;
+        background-size: 99%;
+    }
+    .chat {
+        width: 49px;
+        height: 22px;
+        background-position: -2px -31px;
+        background-size: 122%;
+    }
+    @media(max-width: 1198px) {
+        p {
+            font-size: 19px;
+        }
+        a{
+            font-size: 16px;
+        }
+        .login {
+            width: 68px;
+            height: 17px;
+            background-position: -5px -7px;
+            background-size: 99%;
+        }
+        .chat {
+            width: 46px;
+            height: 17px;
+            background-position: -2px -27px;
+            background-size: 111%;
+        }
+    }
+    .mobile-logo {
+        margin-top: 5px;
+    }
+    
+}
+
+.burger {
+    width: 65px;
+    height: 5px;
+    background-color: $base-light;
+    display: block;
+    position: relative;
+}
+.burger::after {
+    content: '';
+    width: 65px;
+    height: 5px;
+    background-color: $base-light;
+    top: 10px;
+    position: absolute;
+}
+.burger::before {
+    content: '';
+    width: 65px;
+    height: 5px;
+    background-color: $base-light;
+    top: -10px;
+    position: absolute;
+}
+
+.sprite {
+    background: url(../../../img/css_sprites.png);
+    display: inline-block;
+    margin-left: -3px;
+}
+.login {
+    width: 68px;
+    height: 17px;
+    background-position: -5px -7px;
+    background-size: 99%;
+}
+.chat {
+    width: 49px;
+    height: 22px;
+    background-position: -2px -31px;
+    background-size: 122%;
+}
+
+.header-list {
+    background-color: $primary-2;
+    .row {
+        align-items: center;
+    }
+    ul {
+        list-style: none;
+        li {
+            padding: 10px 20px;
+        }
+    }
+    
+    a {
+        @include text (20px,$base-light,$f-reg);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    li:hover {
+        background-color:  $primary-3;
+        color: $primary-2;
+    }
+    .login {
+        width: 36px;
+        height: 16px;
+        background-position: -2px -5px;
+        background-size: 157%;
+    }
+    .chat {
+        width: 41px;
+        height: 16px;
+        background-position: -2px -24px;
+        background-size: 110%;
+    }
+    @media(max-width: 1198px) {
+        a {
+            font-size: 15px;
+        }
+    }
+    .mob {
+        margin: 0;
+        @include text (16px,$base-light,$f-thin);
+    }
+}
+
+.banner {
+    background: url(../../../img/banner.png) $primary-4 center top no-repeat;
+    text-transform: uppercase;
+    img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h1 {
+        @include text(32px,$primary-2,$f-bold);
+        background:$primary-3;
+        text-align: center;
+        padding: 20px 0px;
+        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    }
+    
+    h3 {
+        margin-top: 50px;
+        @include text (22px,$base-dark,$f-med)
+    }
+    
+    li {
+        color: $primary-2;
+        p {
+            @include text (18px,$base-dark,$f-reg)
+        }
+    }
+    button {
+        background: none;
+        border: 1px solid $primary-2;
+        a {
+            @include text (18px,$primary-2,$f-reg);
+            text-decoration: none; 
+        }
+    }
+    .btn-banner {
+        @include text (14px,$primary-2,$f-reg);
+        padding: 10px;
+        border: 1px solid #0983e5;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    @media (max-width:1198px) {
+        .btn-banner {
+            font-size: 12px;
+        }
+    }
+    @media (max-width:998px) {
+        h1 {
+            font-size: 28px;
+        }
+        li {
+            text-transform: initial;
+        }
+    }
+    @media (max-width:767px) {
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
     }
 }
