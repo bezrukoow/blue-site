@@ -166,6 +166,7 @@
     
     li {
         color: $primary-2;
+        text-transform: initial;
         p {
             @include text (18px,$base-dark,$f-reg)
         }
@@ -184,6 +185,7 @@
         border: 1px solid #0983e5;
         margin-left: 20px;
         margin-bottom: 20px;
+        text-align: center;
     }
     @media (max-width:1198px) {
         .btn-banner {
@@ -194,14 +196,82 @@
         h1 {
             font-size: 28px;
         }
-        li {
-            text-transform: initial;
+        .btn-banner {
+            font-size: 8px;
         }
     }
     @media (max-width:767px) {
         h1 {
             margin-top: 20px;
             font-size: 24px;
+            text-align: start;
+            padding: 5px 0 0 10px;
+        }
+        
+    }
+}
+
+.order {
+    background: url(../../../img/bg-btn.png) center top;
+    .row {
+        align-items: center;
+    }
+    .btn-banner {
+        @include text (18px,$base-light,$f-reg);
+        padding: 10px;
+        border: 1px solid $base-light;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .order-btn {
+        background: $base-red;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a {
+            @include text (26px,$base-light,$f-reg);
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: center;
+        }
+        
+    }
+    @media (max-width:1198px) {
+        .btn-banner {
+            font-size:15px; 
+        }
+    }
+    .block-price {
+        text-transform: uppercase;
+        align-items: center;
+        background: $primary-3;
+        margin: 20px 0px;
+        h2 {
+            @include text (28px,$primary-2,$f-bold);
+        }
+        .number {
+            @include text (50px,$base-red,$f-bold);
+        }
+        .pros {
+            @include text (37px,$base-red,$f-reg);
+        }
+        .get-text {
+            @include text (35px,$base-red,$f-reg);
+        }
+        .get-sub-text {
+            margin-left: 10px;
+            @include text (22px,$primary-2,$f-reg);
+        }
+        p {
+            margin: 0;
+        }
+        @media (max-width:767px) {
+            
+
         }
     }
 }
