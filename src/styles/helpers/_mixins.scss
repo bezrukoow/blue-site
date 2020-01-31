@@ -3,3 +3,9 @@
     color: $color;
     font-family: $f-family;
 }
+@mixin toggle {
+        width: 0;
+        height: 0;
+        border-top: 30px solid $primary-3;
+        border-right:30px solid transparent;
+}

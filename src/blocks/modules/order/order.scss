@@ -1,0 +1,46 @@
+.order {
+    background: url(../../../img/order-bg.png) $primary-2 center center no-repeat;
+    .margin-order {
+        margin-top: 25px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    h2 {
+        @include text (28px,$primary-2,$f-bold);
+        background: $primary-3;
+        padding: 5px 20px;
+        
+    }
+    .toggle {
+        @include toggle;
+    }
+    .color-text {
+        color:$base-red;
+    }
+    .number {
+        @include text (28px,$base-red,$f-bold);
+    }
+    .percent {
+        @include text (24px,$base-red,$f-reg);
+    }
+    .text {
+        @include text (20px,$base-red,$f-reg);
+    }
+    .sub-text {
+        @include text (17px,$primary-2,$f-reg);
+    }
+    .order-text {
+        margin: 0;
+        background: $primary-3;
+        padding: 5px 20px;
+    }
+    form {
+        p {
+            @include text (16px,$base-light,$f-reg);
+        }
+        input {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    }
+}

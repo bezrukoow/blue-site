@@ -109,6 +109,7 @@
         list-style: none;
         li {
             padding: 10px 20px;
+            transition: .2s;
         }
     }
     
@@ -120,6 +121,7 @@
     li:hover {
         background-color:  $primary-3;
         color: $primary-2;
+        transition: .3s;
     }
     .login {
         width: 36px;
@@ -141,137 +143,5 @@
     .mob {
         margin: 0;
         @include text (16px,$base-light,$f-thin);
-    }
-}
-
-.banner {
-    background: url(../../../img/banner.png) $primary-4 center top no-repeat;
-    text-transform: uppercase;
-    img {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    h1 {
-        @include text(32px,$primary-2,$f-bold);
-        background:$primary-3;
-        text-align: center;
-        padding: 20px 0px;
-        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-    }
-    
-    h3 {
-        margin-top: 50px;
-        @include text (22px,$base-dark,$f-med)
-    }
-    
-    li {
-        color: $primary-2;
-        text-transform: initial;
-        p {
-            @include text (18px,$base-dark,$f-reg)
-        }
-    }
-    button {
-        background: none;
-        border: 1px solid $primary-2;
-        a {
-            @include text (18px,$primary-2,$f-reg);
-            text-decoration: none; 
-        }
-    }
-    .btn-banner {
-        @include text (14px,$primary-2,$f-reg);
-        padding: 10px;
-        border: 1px solid #0983e5;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    @media (max-width:1198px) {
-        .btn-banner {
-            font-size: 12px;
-        }
-    }
-    @media (max-width:998px) {
-        h1 {
-            font-size: 28px;
-        }
-        .btn-banner {
-            font-size: 8px;
-        }
-    }
-    @media (max-width:767px) {
-        h1 {
-            margin-top: 20px;
-            font-size: 24px;
-            text-align: start;
-            padding: 5px 0 0 10px;
-        }
-        
-    }
-}
-
-.order {
-    background: url(../../../img/bg-btn.png) center top;
-    .row {
-        align-items: center;
-    }
-    .btn-banner {
-        @include text (18px,$base-light,$f-reg);
-        padding: 10px;
-        border: 1px solid $base-light;
-        margin-top: 10px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .order-btn {
-        background: $base-red;
-        width: 100%;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        a {
-            @include text (26px,$base-light,$f-reg);
-            text-decoration: none;
-            text-transform: uppercase;
-            justify-content: center;
-        }
-        
-    }
-    @media (max-width:1198px) {
-        .btn-banner {
-            font-size:15px; 
-        }
-    }
-    .block-price {
-        text-transform: uppercase;
-        align-items: center;
-        background: $primary-3;
-        margin: 20px 0px;
-        h2 {
-            @include text (28px,$primary-2,$f-bold);
-        }
-        .number {
-            @include text (50px,$base-red,$f-bold);
-        }
-        .pros {
-            @include text (37px,$base-red,$f-reg);
-        }
-        .get-text {
-            @include text (35px,$base-red,$f-reg);
-        }
-        .get-sub-text {
-            margin-left: 10px;
-            @include text (22px,$primary-2,$f-reg);
-        }
-        p {
-            margin: 0;
-        }
-        @media (max-width:767px) {
-            
-
-        }
     }
 }
