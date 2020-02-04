@@ -16,12 +16,31 @@
  
  @@include("../blocks/modules/header/header.html")
  @@include("../blocks/modules/banner/banner.html")
- @@include("../blocks/modules/order/order.html")
- @@include("../blocks/modules/main/main.html")
+ <!-- @@include("../blocks/modules/order/order.html")
+ @@include("../blocks/modules/main/main.html") -->
+ @@include("../blocks/modules/works/works.html")
  @@include("../blocks/modules/footer/footer.html")
+ 
 
 
-
+ <script>
+        let article=document.querySelectorAll('.hide-article');
+    let punkts=document.querySelectorAll('.punkts');
+    
+    let arrows=document.querySelectorAll('.arrows');
+    for(let i =0; i<punkts.length; i++){
+        punkts[i].addEventListener('mouseenter',function(){
+            article[i].className='show-article'
+            arrows[i].classList.add('show-arrows')
+          
+        })
+        punkts[i].addEventListener('mouseleave',function(){
+            article[i].className='hide-article'
+            arrows[i].classList.remove('show-arrows')
+           
+        })
+    }
+</script>
 
 </body>
 </html>
