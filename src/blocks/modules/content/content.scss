@@ -5,6 +5,20 @@
     h2 {
         @include h2;
     }
+    @media (max-width:998px) {
+        h2 {
+            font-size: 21px;
+        }
+        .content-title {
+            font-size: 18px;
+        }
+        .content-number {
+            font-size: 15px;
+        }
+        .content-text {
+            font-size: 20px;
+        }
+    }
 
     .toggle {
         @include toggle;

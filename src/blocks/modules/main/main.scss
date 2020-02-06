@@ -4,6 +4,11 @@
     h2 {
         @include h2;
     }
+    @media (max-width:998px) {
+        h2 {
+        font-size: 21px;
+        }
+    }
 
     .toggle {
         @include toggle;
@@ -11,6 +16,11 @@
 
     .main-text {
         @include text (18px, $base-dark, $f-reg)
+    }
+    @media (max-width:998px) {
+        .main-text {
+            font-size: 12px;
+        }
     }
 
     .main-blocks {
@@ -27,7 +37,7 @@
     .main-blocks:hover {
         transition: .4s;
         background: $base-light;
-        box-shadow: 0px 0px 5px 0px $base-dark;
+        box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.75);
 
         .toggle {
             @include toggle;
@@ -39,7 +49,18 @@
     .main-block {
         text-align: center;
         height: 100%;
+        @media (max-width:998px) {
+            img {
+                width: 100px;
+            }
+            h4 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 12px;
+            }
 
+        }
         h4 {
             @include text(18px, $primary-2, $f-med);
             text-transform: uppercase;

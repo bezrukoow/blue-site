@@ -11,6 +11,7 @@
         @include text (28px, $primary-2, $f-bold);
     }
 
+    
     .num {
         @include text (50px, $base-red, $f-bold);
         margin-right: 10px;
@@ -48,6 +49,13 @@
         input {
             font-size: 20px;
         }
+        @media (max-width:998px) {
+            font-size: 15px;
+            input {
+                font-size: 15px;
+            }
+            
+        }
 
     }
 
@@ -73,6 +81,11 @@
             @include toggle-red;
             bottom: 0;
         }
+        @media (max-width:998px) {
+            a {
+                padding: 10px 55px;
+            }
+        }
     }
 
     .form-text {
@@ -92,3 +105,4 @@
         }
     }
 }
+
