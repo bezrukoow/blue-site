@@ -9,3 +9,47 @@
 .twitter {
     color: $primary-1;
 }
+.footer-bg {
+    background: url(../../../img/Bg3.png) $primary-1 center center no-repeat;
+    padding-top: 20px;
+    ul {
+        list-style: none;
+        @include text (14px,$primary-3,$f-reg);
+        p {
+            margin: 0;
+        }
+    }
+    .hr {
+        position: relative;
+        text-align: center;
+        margin: 20px 0px;
+        .hr-footer {
+            position: absolute;
+            width: 100%;
+            color: $primary-3;
+        }
+        .plus {
+            background: $primary-3;
+            position: relative;
+            padding: 10px 13px;
+            border-radius: 50%;
+        }
+    }
+    .footer-menu {
+        
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            @include text (16px,$base-light,$f-med);
+            transition: .4s;
+        }
+        a:hover {
+            transition: .4s;
+            color: $primary-2;
+        }
+    }
+    .footer-creators {
+        text-align: center;
+        @include text (16px,$primary-3,$f-reg);
+    }
+}

@@ -1,0 +1,28 @@
+.content-bg {
+    background: url(../../../img/Bg_elem1.png) $primary-2 center center;
+    padding-bottom: 45px;
+
+    h2 {
+        @include h2;
+    }
+
+    .toggle {
+        @include toggle;
+    }
+
+    .content-title {
+        @include text (20px, $base-light, $f-reg);
+        text-align: center;
+    }
+
+    .content-number {
+        background: $base-light;
+        padding: 5px 10px;
+        border-radius: 50%;
+        @include text (25px, $primary-2, $f-bold);
+    }
+
+    .content-text {
+        @include text (22px, $base-light, $f-reg);
+    }
+}

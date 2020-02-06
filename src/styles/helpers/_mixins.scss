@@ -17,3 +17,12 @@
     border-top: 30px solid $base-red;
     border-right: 30px solid transparent;
 }
+
+@mixin h2 {
+    @include text(28px,$primary-2,$f-bold);
+    background: $primary-3;
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+}

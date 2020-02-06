@@ -2,12 +2,7 @@
     background: url(../../../img/Bg_elem1.png) $primary-5 center top;
 
     h2 {
-        @include text (28px, $primary-2, $f-bold);
-        text-transform: uppercase;
-        text-align: center;
-        padding: 5px 20px;
-        background: $primary-3;
-        margin-top: 40px;
+        @include h2;
     }
 
     .toggle {
@@ -58,6 +53,9 @@
         ul {
             text-align: start;
             margin-left: 20px;
+            p {
+                margin: 0;
+            }
         }
 
         .main-btn {

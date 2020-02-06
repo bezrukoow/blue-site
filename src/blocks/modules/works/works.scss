@@ -7,11 +7,7 @@
     margin-bottom: 20px;
 
     h2 {
-        background-color: $primary-3;
-        @include text (28px, $primary-2, $f-bold);
-        text-transform: uppercase;
-        text-align: center;
-        padding: 10px;
+        @include h2;
     }
 
     .toggle {
@@ -25,7 +21,7 @@
     position: relative;
     border-radius: 0px 4px 4px 0px;
     text-transform: uppercase;
-    border-bottom: 2px solid $primary-3;
+    border-bottom: 1px solid $primary-3;
 
     span {
         @include text (60px, $primary-3, $f-bold);
@@ -52,7 +48,7 @@
 
 .punkts:hover {
     background-color: $primary-2;
-    border: none;
+    border-bottom: 1px solid $primary-2;
 
     h4 {
         color: $base-light;
@@ -121,6 +117,11 @@
         background-color: $base-red;
         text-transform: uppercase;
         @include text (26px, $base-light, $f-reg);
+        transition: .4s;
+    }
+    a:hover {
+        transition: .4s;
+        color: $base-dark;
     }
 
     .toggle {
