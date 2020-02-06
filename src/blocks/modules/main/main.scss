@@ -1,0 +1,72 @@
+.main-bg {
+    background: url(../../../img/Bg_elem1.png) $primary-5 center top;
+
+    h2 {
+        @include text (28px, $primary-2, $f-bold);
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 20px;
+        background: $primary-3;
+        margin-top: 40px;
+    }
+
+    .toggle {
+        @include toggle;
+    }
+
+    .main-text {
+        @include text (18px, $base-dark, $f-reg)
+    }
+
+    .main-blocks {
+        margin-bottom: 50px;
+        transition: .4s;
+
+        .toggle {
+            @include toggle;
+            display: none;
+            margin-left: -15px;
+        }
+    }
+
+    .main-blocks:hover {
+        transition: .4s;
+        background: $base-light;
+        box-shadow: 0px 0px 5px 0px $base-dark;
+
+        .toggle {
+            @include toggle;
+            border-top: 30px solid $base-light;
+            display: block;
+        }
+    }
+
+    .main-block {
+        text-align: center;
+        height: 100%;
+
+        h4 {
+            @include text(18px, $primary-2, $f-med);
+            text-transform: uppercase;
+        }
+
+        p {
+            @include text(16px, $base-dark, $f-reg);
+            text-align: justify;
+        }
+
+        ul {
+            text-align: start;
+            margin-left: 20px;
+        }
+
+        .main-btn {
+            @include text (16px, $base-light, $f-reg);
+            text-decoration: none;
+            text-transform: uppercase;
+            background: $primary-2;
+            padding: 5px 10px;
+            justify-content: end;
+        }
+    }
+}

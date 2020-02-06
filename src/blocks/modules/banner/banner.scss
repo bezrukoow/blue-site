@@ -1,39 +1,47 @@
 .banner {
     background: url(../../../img/banner.png) $primary-4 center top no-repeat;
+
     img {
         margin: 20px 0px;
     }
+
     h1 {
-        @include text (32px,$primary-2,$f-bold);
+        @include text (32px, $primary-2, $f-bold);
         text-transform: uppercase;
         background: $primary-3;
         padding: 10px 60px;
-        
+
     }
+
     h3 {
-        @include text (22px,$base-dark,$f-med);
+        @include text (22px, $base-dark, $f-med);
         margin-left: 60px;
         text-transform: uppercase;
     }
+
     ul {
         margin-left: 60px;
     }
+
     li {
         color: $primary-2;
     }
+
     p {
-        @include text (18px,$base-dark,$f-reg);
+        @include text (18px, $base-dark, $f-reg);
     }
+
     .toggle {
         @include toggle;
         // width: 0;
         // height: 0;
         // border-top: 40px solid $primary-3;
         // border-right:40px solid transparent;
-        
+
     }
+
     a {
-        @include text (18px,$primary-2,$f-reg);
+        @include text (18px, $primary-2, $f-reg);
         border: 1px solid $primary-2;
         text-decoration: none;
         margin: 10px;
@@ -41,11 +49,13 @@
         text-align: center;
         transition: .4s;
     }
+
     a:hover {
         background: $primary-2;
         color: $base-light;
         transition: .4s;
     }
+
     @media(max-width: 1199px) {
         h1 {
             font-size: 30px;

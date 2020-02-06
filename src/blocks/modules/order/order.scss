@@ -1,45 +1,93 @@
-.order {
-    background: url(../../../img/order-bg.png) $primary-2 center center no-repeat;
-    .margin-order {
-        margin-top: 25px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-    h2 {
-        @include text (28px,$primary-2,$f-bold);
+.order-bg {
+    background: url(../../../img/Bg_elem1.png) $order-bg center center no-repeat;
+    text-transform: uppercase;
+    padding: 30px 0px;
+
+    .order {
         background: $primary-3;
-        padding: 5px 20px;
-        
     }
+
+    h2 {
+        @include text (28px, $primary-2, $f-bold);
+    }
+
+    .num {
+        @include text (50px, $base-red, $f-bold);
+        margin-right: 10px;
+    }
+
+    .pros {
+        @include text (37px, $base-red, $f-reg);
+        margin-right: 10px;
+    }
+
+    .sub-text {
+        @include text (35px, $base-red, $f-reg);
+        margin-right: 10px;
+    }
+
+    .text {
+        @include text (22px, $primary-2, $f-reg);
+    }
+
     .toggle {
         @include toggle;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
     }
-    .color-text {
-        color:$base-red;
-    }
-    .number {
-        @include text (28px,$base-red,$f-bold);
-    }
-    .percent {
-        @include text (24px,$base-red,$f-reg);
-    }
-    .text {
-        @include text (20px,$base-red,$f-reg);
-    }
-    .sub-text {
-        @include text (17px,$primary-2,$f-reg);
-    }
-    .order-text {
-        margin: 0;
-        background: $primary-3;
-        padding: 5px 20px;
-    }
-    form {
+
+    .form {
+        @include text (22px, $base-light, $f-reg);
+
         p {
-            @include text (16px,$base-light,$f-reg);
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
+
         input {
-            margin-top: 10px;
+            font-size: 20px;
+        }
+
+    }
+
+    .form-btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        a {
+            padding: 10px 60px;
+            background: $base-red;
+            color: $base-light;
+            text-decoration: none;
+            transition: .4s;
+        }
+
+        a:hover {
+            transition: .4s;
+            color: $base-dark;
+        }
+
+        .toggle {
+            @include toggle-red;
+            bottom: 0;
+        }
+    }
+
+    .form-text {
+        display: flex;
+        align-items: flex-end;
+
+        .text-price {
+            font-size: 16px;
+        }
+
+        .price {
+            font-size: 35px;
+        }
+
+        .money {
             font-size: 20px;
         }
     }
