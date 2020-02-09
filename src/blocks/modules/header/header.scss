@@ -68,6 +68,12 @@
         margin-top: 5px;
     }
 
+    @media (max-width:767px) {
+        img {
+            width: 150px;
+        }
+        
+    }
 }
 
 .burger {
@@ -118,7 +124,7 @@
 
 .header-list {
     background-color: $primary-2;
-
+    @include shadow;
     .row {
         align-items: center;
     }

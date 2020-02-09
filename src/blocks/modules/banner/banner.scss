@@ -12,6 +12,40 @@
         padding: 10px 60px;
 
     }
+    .shadow {
+        @include shadow;
+    }
+    @media (max-width:1198px) {
+        .shadow {
+            h1  { 
+            }
+        }
+    }
+    @media (max-width:767px) {
+        .shadow {
+           margin: 20px 0px 50px;
+           h1 {
+               font-size: 24px;
+               padding: 5px 10px;
+               text-align: center;
+           }
+        }
+        h3 {
+            margin-left: 0px;
+        }
+        ul {
+            margin-left: 0px;
+        }
+        background: none;
+    }
+    @media (max-width:375px) {
+        .shadow {
+            h1 {
+                text-align: left;
+            }
+        }
+        
+    }
 
     h3 {
         @include text (22px, $base-dark, $f-med);
@@ -59,6 +93,93 @@
     @media(max-width: 1199px) {
         h1 {
             font-size: 30px;
+        }
+        a {
+            font-size: 15px;
+        }
+    }
+    @media (max-width:991px) {
+        a {
+            font-size: 11px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    //  MOBILE 
+    .shadow {
+        @include shadow;
+        margin-bottom: 20px;
+    }
+    .num {
+        @include text (50px, $base-red, $f-bold);
+        margin-right: 10px;
+    }
+
+    .pros {
+        @include text (37px, $base-red, $f-reg);
+        margin-right: 10px;
+    }
+
+    .sub-text {
+        @include text (35px, $base-red, $f-reg);
+        margin-right: 10px;
+    }
+
+    .text {
+        @include text (22px, $primary-2, $f-reg);
+    }
+
+    .toggle {
+        @include toggle;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+    }
+    .order  {
+        background: $primary-3;
+    }
+    .btn-width {
+        a {
+            width: 100%;
+        }
+    }
+    @media (max-width:767px) {
+        .shadow {
+            .text-sm {
+                justify-content: center;
+            }
+            .num {
+                font-size: 40px;
+            }
+            .pros {
+                font-size: 30px;
+            }
+            .sub-text {
+                font-size: 20px;
+            }
+            .text {
+                font-size: 15px;
+            }
+        }
+    }
+    @media (max-width:375px) {
+        .shadow {
+            .text-sm {
+                justify-content: center;
+            }
+            .num {
+                font-size: 35px;
+            }
+            .pros {
+                font-size: 25px;
+            }
+            .sub-text {
+                font-size: 20px;
+            }
+            .text {
+                font-size: 12px;
+            }
         }
     }
 }

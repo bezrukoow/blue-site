@@ -71,4 +71,11 @@
         text-align: center;
         @include text (16px,$primary-3,$f-reg);
     }
+
+    .mobile-link {
+        a {
+            @include text (18px,$base-light,$f-med);
+            text-transform: uppercase;
+        }
+    }
 }

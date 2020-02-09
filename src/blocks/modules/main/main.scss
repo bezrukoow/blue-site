@@ -1,6 +1,5 @@
 .main-bg {
     background: url(../../../img/Bg_elem1.png) $primary-5 center top;
-
     h2 {
         @include h2;
     }
@@ -10,6 +9,9 @@
         }
     }
 
+    .shadow {
+        @include shadow;
+    }
     .toggle {
         @include toggle;
     }
@@ -25,30 +27,42 @@
 
     .main-blocks {
         margin-bottom: 50px;
+        padding: 10px;
         transition: .4s;
-
+        height: 550px;
         .toggle {
             @include toggle;
             display: none;
             margin-left: -15px;
+        }
+        @media (max-width:998px) {
+            height: 450px;
         }
     }
 
     .main-blocks:hover {
         transition: .4s;
         background: $base-light;
-        box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.75);
+        // box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.75);
+        filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 
         .toggle {
             @include toggle;
             border-top: 30px solid $base-light;
             display: block;
+            margin-left: -10px;
         }
     }
 
     .main-block {
         text-align: center;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 100px;
+        }
         @media (max-width:998px) {
             img {
                 width: 100px;
@@ -59,7 +73,6 @@
             p {
                 font-size: 12px;
             }
-
         }
         h4 {
             @include text(18px, $primary-2, $f-med);
@@ -78,14 +91,41 @@
                 margin: 0;
             }
         }
-
+        .main-btn-div {
+            margin-top: 135px;
+        }
+        .btn-3 {
+            margin-top: 55px;
+        }
+        .btn-4  {
+            margin-top: 80px;
+        }
         .main-btn {
             @include text (16px, $base-light, $f-reg);
             text-decoration: none;
             text-transform: uppercase;
             background: $primary-2;
             padding: 5px 10px;
-            justify-content: end;
+            margin-top: 30px;
         }
+        @media (max-width:1198px) {
+            p {
+                font-size: 14px;
+            }
+            h4 {
+                font-size: 15px;
+            }
+            img {
+                width: 60px;
+            }
+        }
+    }
+    .main-icon {
+        margin: 0 auto;
+        img {
+            width: 60px;
+            margin-left: 5px;
+        }
+        margin-bottom: 20px;
     }
 }

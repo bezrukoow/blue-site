@@ -9,9 +9,12 @@
 
     h2 {
         @include text (28px, $primary-2, $f-bold);
+
     }
 
-    
+    .shadow {
+        @include shadow;
+    }
     .num {
         @include text (50px, $base-red, $f-bold);
         margin-right: 10px;
@@ -37,7 +40,35 @@
         bottom: -30px;
         left: 0;
     }
-
+    @media (max-width:375px) {
+        .shadow {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    @media (max-width:767px) {
+        .shadow {
+            h2 {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+        .form {
+            input {
+                width: 100%;
+            }
+        }
+        .form-text {
+            justify-content: center;
+        }
+        .form-btn {
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     .form {
         @include text (22px, $base-light, $f-reg);
 

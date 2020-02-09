@@ -5,18 +5,33 @@
     h2 {
         @include h2;
     }
+
+    .shadow {
+        @include shadow;
+    }
+
     @media (max-width:998px) {
         h2 {
             font-size: 21px;
         }
+
         .content-title {
             font-size: 18px;
         }
+
         .content-number {
             font-size: 15px;
         }
+
         .content-text {
             font-size: 20px;
+        }
+    }
+
+    @media (max-width:767px) {
+        .content-number {
+            float: left;
+            margin-right: 10px;
         }
     }
 
